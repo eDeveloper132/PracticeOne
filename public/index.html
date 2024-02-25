@@ -38,5 +38,12 @@
             </div>
             <script src="index.js" type="module"></script>
             <link rel="stylesheet" href="style.css">
+            <link rel="manifest" href="../manifest.json">
+            <script>
+                if (typeof navigator.serviceWorker !== 'undefined') {
+                  navigator.serviceWorker.register('../sw.js')
+                }
+              </script>
+              
 </body>
 </html>
