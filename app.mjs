@@ -1,8 +1,9 @@
 import express from "express";
+import "dotenv/config";
 import path from "path";
-const app = express();
-const PORT = 8080;
 
+const app = express();
+const PORT = process.env.PORT;
 const __dirname = path.resolve();
 
 app.use((request,response,next)=>
